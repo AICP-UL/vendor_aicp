@@ -35,6 +35,7 @@ SOONG_CONFIG_lineageGlobalVars += \
     disable_bluetooth_le_set_host_feature \
     bootloader_message_offset \
     gralloc_handle_has_custom_content_md_reserved_size \
+    disable_postrender_cleanup \
     gralloc_handle_has_reserved_size \
     target_health_charging_control_charging_path \
     target_health_charging_control_charging_enabled \
@@ -68,6 +69,7 @@ SOONG_CONFIG_lineageQcomVars += \
 endif
 
 # Soong bool variables
+SOONG_CONFIG_lineageGlobalVars_disable_postrender_cleanup := $(TARGET_DISABLE_POSTRENDER_CLEANUP)
 SOONG_CONFIG_lineageGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
 SOONG_CONFIG_lineageGlobalVars_gralloc_handle_has_custom_content_md_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE)
 SOONG_CONFIG_lineageGlobalVars_gralloc_handle_has_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE)
