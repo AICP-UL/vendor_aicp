@@ -86,8 +86,7 @@ PRODUCT_COPY_FILES += \
 
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI \
-    Launcher3QuickStep
+    SystemUI
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
@@ -106,8 +105,6 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/config/permissions/privapp-permissions-aicp-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-aicp.xml
 
 PRODUCT_PACKAGES += \
-    DocumentsUIOverlay \
-    Launcher3Overlay \
     NetworkStackOverlay
 
 # Hidden API whitelist
